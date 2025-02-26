@@ -1,0 +1,81 @@
+/* Manuelle Dark-Mode-Styles */
+.dark .dark\:bg-gray-800 {
+  background-color: #1f2937;
+}
+.dark .dark\:text-gray-200 {
+  color: #e5e7eb;
+}
+.dark .dark\:bg-gray-700 {
+  background-color: #374151;
+}
+.dark .dark\:text-gray-400 {
+  color: #9ca3af;
+}
+.dark .dark\:hover\:bg-gray-700:hover {
+  background-color: #374151;
+}
+.dark .dark\:border-gray-600 {
+  border-color: #4b5563;
+}
+
+/* Mobile Menü Animation */
+#mobileMenu.open {
+  max-height: 300px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  space-x-2;
+  padding: 10px;
+  border-radius: 8px;
+  color: #374151;
+  transition: background-color 0.2s;
+}
+
+.dark .mobile-menu-item {
+  color: #e5e7eb;
+}
+
+.mobile-menu-item:hover {
+  background-color: #f3f4f6;
+}
+
+.dark .mobile-menu-item:hover {
+  background-color: #374151;
+}
+
+#mobileMenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#mobileMenu.open {
+  max-height: 500px; /* Oder die maximale Höhe deines Menüs */
+  opacity: 1;
+}
+
+/* Standard-Icon-Farbe */
+.nav-icon {
+  color: #4a5568; /* Standardgrau */
+  transition: color 0.3s;
+}
+
+/* Hover-Effekt */
+.nav-icon-link:hover .nav-icon {
+  color: #6b46c1; /* Lila */
+}
+
+/* Dark Mode: Icon-Farbe anpassen */
+.dark .nav-icon {
+  color: #e5e7eb; /* Hellgrau für Dark Mode */
+}
+
+.dark .nav-icon-link:hover .nav-icon {
+  color: #c084fc; /* Helleres Lila */
+}
